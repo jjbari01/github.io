@@ -1,0 +1,81 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Pagination
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@pagination-padding-vertical:                   1px;
+@pagination-padding-horizontal:                 3px;
+@pagination-line-height:                        @global-line-height;
+@pagination-background:                         @global-secondary-background;
+@pagination-color:                              @global-contrast-color;
+@pagination-hover-color:                        @global-link-color;
+@pagination-hover-background:                   @global-background;
+@pagination-onclick-background:                 @global-light-background;
+@pagination-onclick-color:                      @pagination-hover-color;
+
+@pagination-active-background:                  @global-background;
+@pagination-active-color:                       @pagination-hover-color;
+
+@pagination-disabled-background:                @global-background;
+@pagination-disabled-color:                     @global-muted-color;
+
+@pagination-margin-left:						10px;
+
+//
+// New
+//
+
+@pagination-border-color:						@global-color;
+@pagination-border-radius:						3px;
+
+// Component
+// ========================================================================
+
+.hook-pagination-item() {
+	border-radius: @pagination-border-radius;
+	border: 1px solid @pagination-border-color;
+}
+
+
+// Items
+// ========================================================================
+
+.hook-pagination-link() {}
+
+.hook-pagination-link-hover() {
+	border: 1px solid @pagination-active-color;
+}
+
+.hook-pagination-link-active() {}
+
+//
+// Active
+//
+
+.hook-pagination-active() {
+	border: 1px solid @pagination-active-color;
+}
+
+//
+// Disabled
+//
+
+.hook-pagination-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-pagination-misc() {
+
+	.uk-pagination{
+		text-align: left;
+		margin-top: 0;
+	}
+}

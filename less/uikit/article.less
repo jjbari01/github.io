@@ -1,0 +1,73 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Article
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@article-margin-top:                            @global-grid-gutter;
+
+@article-title-font-size:                       round((@global-font-size * 1.71)); // 24px
+@article-title-line-height:                     40px;
+
+@article-meta-font-size:                        round((@global-font-size * 0.85)); // 14px
+@article-meta-line-height:                      30px;
+@article-meta-color:                            @global-color;
+
+@article-lead-color:                            @global-color;
+@article-lead-font-size:                        round((@global-font-size * 1.28)); // 18px
+@article-lead-line-height:                      round((@article-lead-font-size * 1.33)); // 24px
+
+@article-divider-margin:                        @global-margin-large;
+@article-divider-border:                        @global-border;
+
+@article-title-text-transform:					uppercase;
+@article-lead-font-weight:						300;
+
+
+
+// Sub-object `uk-article-title`
+// ========================================================================
+
+.hook-article-title() {
+	margin-top: 0;
+    line-height: @article-title-line-height;
+    font-size: @article-title-font-size;
+    font-weight: @base-heading-font-weight;
+    padding-bottom: @panel-box-padding;
+    margin-bottom: 30px;
+    display: inline-block;
+    border-bottom: @panel-title-border-width*2 solid @global-default-background;
+    letter-spacing: @global-heading-letter-space;
+}
+
+
+// Sub-object `uk-article-meta`
+// ========================================================================
+
+.hook-article-meta() {
+	text-transform: uppercase;
+    color: lighten(@global-color, 20%);
+}
+
+
+// Sub-object `uk-article-lead`
+// ========================================================================
+
+.hook-article-lead() {}
+
+
+// Sub-object `uk-article-divider`
+// ========================================================================
+
+.hook-article-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-article-misc() {}

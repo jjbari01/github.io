@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="agency, portfolio, creative, portfolio, theme, template, arrowthemes" />
+  <meta name="description" content="Responsive Portfolio Template" />
+  <meta name="author" content="arrowthemes">
+  <title>UIkit Elements - Celsius</title>
+
+  <!-- fav icon -->
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+
+  <!-- preloader -->
+  <div class="tm-preload">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- main bar -->
+  <div class="tm-mainbar">
+    <div class="tm-stick-wrapper" data-uk-sticky>
+
+      <!-- logo -->
+      <a class="tm-logo uk-hidden-small uk-text-center" href="index.html">
+        <img src="images/demo/default/logo/logo.svg" width="200" height="180" alt="demo">
+      </a>
+
+      <!-- small logo -->
+      <div class="uk-navbar-content uk-visible-small">
+          <a class="tm-logo-small" href="index.html">
+        	   <img src="images/demo/default/logo/logo-small.svg" width="173" height="60" alt="demo">
+          </a>
+      </div>
+
+      <!-- vertical main menu -->
+      <nav class="tm-navbar uk-navbar">
+        <ul class="uk-navbar-nav uk-hidden-small">
+
+          <!-- home menu  -->
+          <li class="uk-parent" data-uk-dropdown><a href="index.html">Home</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="agency-layout.html">Agency Layout</a></li>
+                    <li><a href="grid-layout.html">Grid Layout</a></li>
+                    <li><a href="grid-margin-layout.html">Grid with margin Layout</a></li>
+                    <li><a href="full-slider-layout.html">Full Slider Layout</a></li>
+                    <li><a href="video-background.html">Video Background</a></li>
+                    <li><a href="blog-layout.html">Blog Layout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- features menu -->
+          <li class="uk-parent uk-active" data-uk-dropdown><a href="#">Features</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="module-layouts.html">Module Layouts</a></li>
+                    <li class="uk-parent"><a href="#">Page Layouts</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="full-content.html">Full Content</a></li>
+                        <li><a href="left-content.html">Left + Content</a></li>
+                        <li><a href="content-right.html">Content + Right</a></li>
+                        <li><a href="left-content-right.html">Left + Content + Right</a></li>
+                        <li><a href="content-left-right.html">Content + Left + Right</a></li>
+                        <li><a href="left-right-content.html">Left + Right + Content</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="uikit-elements.html">UIkit Elements</a></li>
+                    <li><a href="icon-fonts.html">Icon Fonts</a></li>
+                    <li><a href="pricing-tables.html">Pricing Tables</a></li>
+                    <li><a href="unlimited-colors.html">Unlimited Colors</a></li>
+                    <li><a href="light-dark-skins.html">Light &amp; Dark Skins</a></li>
+                    <li><a href="rtl-language-support.html">RTL Language Support</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- elements menu -->
+          <li class="uk-parent" data-uk-dropdown><a href="#">Elements</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-2">
+              <div class="uk-grid uk-dropdown-grid">
+
+                <!-- first dropdown column -->
+                <div class="uk-width-1-2">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="shortcodes-typography.html">Typography</a></li>
+                    <li><a href="shortcodes-column-blocks.html">Column Blocks</a></li>
+                    <li><a href="shortcodes-buttons.html">Buttons</a></li>
+                    <li><a href="shortcodes-dropdowns.html">Dropdowns</a></li>
+                    <li><a href="shortcodes-alerts.html">Alerts &amp; Badges</a></li>
+                    <li><a href="shortcodes-panels.html">Panels</a></li>
+                    <li><a href="shortcodes-accordion.html">Accordion &amp; Toggles</a></li>
+                    <li><a href="shortcodes-tooltips.html">Tooltips</a></li>
+                  </ul>
+                </div>
+
+                <!-- second dropdown column -->
+                <div class="uk-width-1-2">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="shortcodes-progress.html">Progress Bar</a></li>
+                    <li><a href="shortcodes-tabs.html">Tabs</a></li>
+                    <li><a href="shortcodes-tables.html">Tables</a></li>
+                    <li><a href="shortcodes-images.html">Images</a></li>
+                    <li><a href="shortcodes-modal-box.html">Modal Box</a></li>
+                    <li><a href="shortcodes-lightbox.html">Lightbox</a></li>
+                    <li><a href="shortcodes-slideshow.html">Slideshow</a></li>
+                    <li><a href="shortcodes-dynamic-grid.html">Dynamic Grid</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Pages menu -->
+          <li class="uk-parent" data-uk-dropdown><a href="#">Pages</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                    <li><a href="our-services.html">Our Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="404.html">404 Error page</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Portfolio menu -->
+          <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="single-portfolio.html">Single Portfolio</a></li>
+                    <li><a href="slideshow-portfolio.html">Slideshow Portfolio</a></li>
+                    <li><a href="3-column-gallery.html">3 Column Gallery</a></li>
+                    <li><a href="4-column-gallery.html">4 Column Gallery</a></li>
+                    <li><a href="portfolio-category.html">Portfolio Category</a></li>
+                    <li><a href="masonry-portfolio.html">Masonry Portfolio</a></li>
+                    <li><a href="masonry-portfolio-margin.html">Masonry Portfolio with margin</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Blog menu -->
+          <li class="uk-parent" data-uk-dropdown><a href="#">Blog</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
+                    <li><a href="blog-item.html">Blog Item</a></li>
+                    <li><a href="blog-category.html">Blog Category</a></li>
+                    <li><a href="masonry-blog.html">Masonry Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Contact us menu -->
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- header side section-->
+      <div class="tm-header-side">
+        <div class=" uk-hidden-small">
+
+          <!-- social icons -->
+          <a href="https://twitter.com/arrowthemes" class="uk-icon-button uk-icon-sl-social-twitter" target="_blank"></a>
+          <a href="https://dribbble.com/arrowthemes" class="uk-icon-button uk-icon-sl-social-dribbble" target="_blank"></a>
+          <a href="https://facebook.com/arrowthemes" class="uk-icon-button uk-icon-sl-social-facebook" target="_blank"></a>
+        </div>
+
+        <div class=" uk-hidden-small">
+  			  <p>Welcome to celsius agency group.</p>
+        </div>
+      </div>
+
+      <!-- vertical menu toggle -->
+      <div class="tm-vertical-toggle uk-hidden-small">
+        <a href="#offcanvas" class="uk-navbar-toggle uk-flex uk-flex-middle" data-uk-offcanvas><span></span></a>
+      </div>
+
+      <!-- footer -->
+      <footer class="tm-footer uk-width-1-1">
+        <div class="">
+	         <p class="uk-text-center">Copyright &copy; <a href="http://goo.gl/fpWYUL" target="_blank">Celsius</a></p>
+        </div>
+      </footer>
+
+      <!-- offcanvas menu toggle -->
+      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small uk-flex uk-flex-middle" data-uk-offcanvas><span></span></a>
+    </div>
+  </div>
+
+    <!-- main container -->
+    <div class="uk-container tm-sheet uk-animation-fade">
+
+      <!-- to top scroller -->
+      <div class="uk-sticky-placeholder">
+        <div data-uk-smooth-scroll data-uk-sticky="{top:-500}">
+          <a class="tm-totop-scroller uk-animation-slide-bottom" href="#" ></a>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
+        <div class="tm-main uk-width-medium-1-1">
+          <main class="tm-content">
+
+            <!-- article -->
+            <article class="uk-article">
+              <div class="tm-article-wrapper">
+                <div class=" tm-article-content uk-margin-large-bottom uk-margin-top-remove">
+                  <h1 class="uk-article-title">Built with UIKit</h1>
+
+                  <div class="tm-article">
+                    <div class="uk-grid" data-uk-grid-margin>
+
+                        <div class="uk-width-medium-2-3">
+
+                            <div class="uk-grid" data-uk-grid-margin>
+
+                                <div class="uk-width-1-1">
+
+                                    <article class="uk-article">
+
+                                        <p class="uk-article-meta">Written by Super User on 12 April. Posted in Blog</p>
+
+                                        <p><img class="uk-thumbnail" src="images/demo/uikit/uikit_placeholder.jpg" width="1080" height="540" alt="UIkit"></p>
+
+                                        <p class="uk-article-lead">A lightweight and modular front-end framework.</p>
+                                        <p>UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces. It comes with a wide range of reusable and combinable components. All UIkit classes are namespaced, so they won't interfere with other frameworks and extensions you might be using. Here's an overview of the different UIkit components, which you can easily modify using the customizer.</p>
+
+                                        <div class="uk-margin" data-uk-margin>
+
+                                            <div class="uk-button-group">
+                                                <button class="uk-button">Button</button>
+                                                <div data-uk-dropdown="{mode:'click'}">
+                                                    <button class="uk-button"><i class="uk-icon-caret-down"></i></button>
+                                                    <div class="uk-dropdown uk-dropdown-width-2">
+
+                                                        <div class="uk-grid">
+
+                                                            <div class="uk-width-1-2">
+                                                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Separated item</a></li>
+                                                                    <li class="uk-parent">
+                                                                        <a href="#">Parent</a>
+                                                                        <ul class="uk-nav-sub">
+                                                                            <li><a href="#">Sub item</a>
+                                                                                <ul>
+                                                                                    <li><a href="#">Sub item</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="uk-width-1-2">
+                                                                <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                                                    <li class="uk-nav-header">Header</li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li><a href="#">Item</a></li>
+                                                                    <li class="uk-nav-divider"></li>
+                                                                    <li><a href="#">Separated item</a></li>
+                                                                    <li class="uk-parent">
+                                                                        <a href="#">Parent</a>
+                                                                        <ul class="uk-nav-sub">
+                                                                            <li><a href="#">Sub item</a>
+                                                                                <ul>
+                                                                                    <li><a href="#">Sub item</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-button-group">
+                                                <button class="uk-button uk-button-primary">Primary</button>
+                                                <div data-uk-dropdown="{mode:'click'}">
+                                                    <button class="uk-button uk-button-primary"><i class="uk-icon-caret-down"></i></button>
+                                                    <div class="uk-dropdown uk-dropdown-small">
+                                                        <ul class="uk-nav uk-nav-dropdown">
+                                                            <li class="uk-nav-header">Header</li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-divider"></li>
+                                                            <li><a href="#">Separated item</a></li>
+                                                            <li class="uk-parent">
+                                                                <a href="#">Parent</a>
+                                                                <ul class="uk-nav-sub">
+                                                                    <li><a href="#">Sub item</a>
+                                                                        <ul>
+                                                                            <li><a href="#">Sub item</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-button-group">
+                                                <button class="uk-button uk-button-success">Success</button>
+                                                <div data-uk-dropdown="{mode:'click'}">
+                                                    <button class="uk-button uk-button-success"><i class="uk-icon-caret-down"></i></button>
+                                                    <div class="uk-dropdown">
+                                                        <ul class="uk-nav uk-nav-dropdown">
+                                                            <li class="uk-nav-header">Header</li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-divider"></li>
+                                                            <li><a href="#">Separated item</a></li>
+                                                            <li class="uk-parent">
+                                                                <a href="#">Parent</a>
+                                                                <ul class="uk-nav-sub">
+                                                                    <li><a href="#">Sub item</a>
+                                                                        <ul>
+                                                                            <li><a href="#">Sub item</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-button-group">
+                                                <button class="uk-button uk-button-danger">Danger</button>
+                                                <div data-uk-dropdown="{mode:'click'}">
+                                                    <button class="uk-button uk-button-danger"><i class="uk-icon-caret-down"></i></button>
+                                                    <div class="uk-dropdown">
+                                                        <ul class="uk-nav uk-nav-dropdown">
+                                                            <li class="uk-nav-header">Header</li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li><a href="#">Item</a></li>
+                                                            <li class="uk-nav-divider"></li>
+                                                            <li><a href="#">Separated item</a></li>
+                                                            <li class="uk-parent">
+                                                                <a href="#">Parent</a>
+                                                                <ul class="uk-nav-sub">
+                                                                    <li><a href="#">Sub item</a>
+                                                                        <ul>
+                                                                            <li><a href="#">Sub item</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button class="uk-button" disabled>Disabled</button>
+                                            <button class="uk-button uk-button-link">Button link</button>
+
+                                        </div>
+
+                                        <pre><code>&lt;div class="myclass"&gt;...&lt;/div&gt;</code></pre>
+
+                                        <hr class="uk-article-divider">
+
+                                        <div class="uk-grid" data-uk-grid-margin>
+
+                                            <div class="uk-width-medium-1-3">
+                                                <span class="uk-text-muted">text-muted</span><br>
+                                                <span class="uk-text-primary">text-primary</span><br>
+                                                <span class="uk-text-success">text-success</span><br>
+                                                <span class="uk-text-warning">text-warning</span><br>
+                                                <span class="uk-text-danger">text-danger</span>
+                                            </div>
+
+                                            <div class="uk-width-medium-1-3">
+                                                <a href="#">a element</a><br>
+                                                <em>em element</em><br>
+                                                <strong>strong</strong><br>
+                                                <code>code element</code><br>
+                                                <del>del element</del>
+                                            </div>
+
+                                            <div class="uk-width-medium-1-3">
+                                                <ins>ins element</ins><br>
+                                                <mark>mark element</mark><br>
+                                                <q>q <q>inside</q> a q element </q><br>
+                                                <abbr title="Abbreviation Element">abbr element</abbr><br>
+                                                <dfn title="Defines a definition term">dfn element</dfn>
+                                            </div>
+
+                                            <div class="uk-width-medium-1-2">
+                                                <h1 class="uk-display-inline">h1</h1>
+                                                <h2 class="uk-display-inline">h2</h2>
+                                                <h3 class="uk-display-inline">h3</h3>
+                                                <h4 class="uk-display-inline">h4</h4>
+                                                <h5 class="uk-display-inline">h5</h5>
+                                                <h6 class="uk-display-inline">h6</h6>
+                                            </div>
+
+                                            <div class="uk-width-medium-1-2">
+                                                <blockquote>
+                                                    <p> Lorem ipsum dolor.</p>
+                                                    <small>Someone famous</small>
+                                                </blockquote>
+                                            </div>
+
+                                        </div>
+
+                                        <hr class="uk-article-divider">
+
+                                        <div class="uk-width-1-1">
+                                            <div class="uk-grid" data-uk-grid-margin>
+                                                <div class="uk-width-medium-1-4">
+                                                    <span class="uk-badge">Badge</span>
+                                                    <span class="uk-badge uk-badge-notification">1</span>
+                                                </div>
+                                                <div class="uk-width-medium-1-4">
+                                                    <span class="uk-badge uk-badge-success">Success</span>
+                                                    <span class="uk-badge uk-badge-success uk-badge-notification">4</span>
+                                                </div>
+                                                <div class="uk-width-medium-1-4">
+                                                    <span class="uk-badge uk-badge-warning">Warning</span>
+                                                    <span class="uk-badge uk-badge-warning uk-badge-notification">3</span>
+                                                </div>
+                                                <div class="uk-width-medium-1-4">
+                                                    <span class="uk-badge uk-badge-danger">Danger</span>
+                                                    <span class="uk-badge uk-badge-danger uk-badge-notification">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </article>
+
+                                </div>
+
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-comment-list">
+                                        <li>
+                                            <article class="uk-comment">
+                                                <header class="uk-comment-header">
+                                                    <img class="uk-comment-avatar" src="images/demo/uikit/uikit_avatar.svg" width="50" height="50" alt="">
+                                                    <h4 class="uk-comment-title">Author</h4>
+                                                    <p class="uk-comment-meta">May 2, 2009 at 1:55 pm</p>
+                                                </header>
+                                                <div class="uk-comment-body">
+                                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-width-1-1">
+                                    <ul class="uk-pagination">
+                                        <li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>
+                                        <li class="uk-active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><span>...</span></li>
+                                        <li><a href="#">20</a></li>
+                                        <li><a href="#"><i class="uk-icon-angle-double-right"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="uk-width-medium-1-3">
+
+                            <div class="uk-grid" data-uk-grid-margin>
+
+                                <div class="uk-width-1-1">
+
+                                    <div class="uk-panel">
+                                        <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li class="uk-parent">
+                                                <a href="#">Parent</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a>
+                                                        <ul>
+                                                            <li><a href="#">Sub item</a></li>
+                                                            <li><a href="#">Sub item</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="uk-panel uk-panel-box">
+                                        <h3 class="uk-panel-title">Box</h3>
+                                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.</p>
+                                        <p><button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button></p>
+                                    </div>
+
+                                    <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                        <h3 class="uk-panel-title">Box primary</h3>
+                                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                                        <h3 class="uk-panel-title">Box secondary</h3>
+                                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.</p>
+                                        <p><button class="uk-button" data-uk-tooltip title="Bazinga!">Tooltip</button></p>
+                                    </div>
+
+                                    <div class="uk-panel uk-panel-header">
+                                        <h3 class="uk-panel-title">Header</h3>
+                                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="uk-panel uk-panel-divider">
+                                        <h3 class="uk-panel-title">Divider</h3>
+                                        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit.</p>
+                                        <p>
+                                            <a href="#" class="uk-icon-button uk-icon-github"></a>
+                                            <a href="#" class="uk-icon-button uk-icon-twitter"></a>
+                                            <a href="#" class="uk-icon-button uk-icon-dribbble"></a>
+                                            <a href="#" class="uk-icon-button uk-icon-html5"></a>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <hr class="uk-grid-divider">
+
+                    <div class="uk-grid" data-uk-grid-margin>
+
+                        <div class="uk-width-medium-1-2">
+
+                            <div class="uk-margin">
+                                <div class="uk-alert" data-uk-alert>
+                                    <a class="uk-alert-close uk-close"></a>
+                                    <p>Info message</p>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-alert uk-alert-success" data-uk-alert>
+                                    <a class="uk-alert-close uk-close"></a>
+                                    <p>Success message</p>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-alert uk-alert-warning" data-uk-alert>
+                                    <a class="uk-alert-close uk-close"></a>
+                                    <p>Warning message</p>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-alert uk-alert-danger" data-uk-alert>
+                                    <a class="uk-alert-close uk-close"></a>
+                                    <p>Danger message</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="uk-width-medium-1-2">
+
+                            <div class="uk-margin">
+                                <div class="uk-progress">
+                                    <div class="uk-progress-bar" style="width: 55%;">55%</div>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-progress uk-progress-success">
+                                    <div class="uk-progress-bar" style="width: 29%;">29%</div>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-progress uk-progress-warning">
+                                    <div class="uk-progress-bar" style="width: 69%;">69%</div>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <div class="uk-progress uk-progress-danger">
+                                    <div class="uk-progress-bar" style="width: 34%;">34%</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="uk-grid" data-uk-grid-margin>
+
+                        <div class="uk-width-1-2">
+                            <form class="uk-form">
+                                <fieldset>
+                                    <legend>Form states</legend>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="Text Input" class="uk-width-1-1">
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="form-success" value="form-success" class="uk-width-1-1 uk-form-success">
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="form-danger" value="form-danger" class="uk-width-1-1 uk-form-danger">
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="form disabled" class="uk-width-1-1" disabled>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="uk-width-1-2">
+                            <form class="uk-form">
+                                <fieldset class="uk-form">
+                                    <legend>Form styles</legend>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="form-large" class="uk-form-large uk-form-width-medium">
+                                        <button class="uk-button uk-button-large" type="reset">Large</button>
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="form-small" class="uk-form-small uk-form-width-medium">
+                                        <button class="uk-button uk-button-small" type="reset">Small</button>
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <input type="text" placeholder="form-blank" class="uk-form-width-medium uk-form-blank">
+                                        <button class="uk-button uk-button-mini" type="reset">Mini</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <hr class="uk-grid-divider">
+
+                    <div class="uk-grid" data-uk-grid-margin>
+
+                        <div class="uk-width-medium-1-3">
+
+                            <ul class="uk-subnav uk-subnav-line">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><span>Disabled</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="uk-width-medium-1-3">
+
+                            <ul class="uk-subnav uk-subnav-pill">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><span>Disabled</span></li>
+                            </ul>
+
+                        </div>
+                        <div class="uk-width-medium-1-3">
+
+                            <ul class="uk-tab" data-uk-tab>
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-disabled"><a href="#">Disabled</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <hr class="uk-grid-divider">
+
+                    <div class="uk-grid uk-grid-divider uk-margin-large" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-4">
+
+                            <ul class="uk-list uk-list-line">
+                                <li>List item 1</li>
+                                <li>List item 2</li>
+                                <li>List item 3</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="uk-width-medium-1-4">
+
+                            <ul class="uk-list uk-list-striped">
+                                <li>List item 1</li>
+                                <li>List item 2</li>
+                                <li>List item 3</li>
+                            </ul>
+
+                        </div>
+                        <div class="uk-width-medium-1-4">
+
+                            <table class="uk-table uk-table-striped uk-table-condensed uk-table-hover">
+                                <caption>Table caption</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Table</th>
+                                        <th>Heading</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Table</td>
+                                        <td>Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Table</td>
+                                        <td>Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="uk-width-medium-1-4">
+
+                            <dl class="uk-description-list uk-description-list-line">
+                                <dt>Description lists</dt>
+                                <dd>Description text.</dd>
+                                <dt>Description lists</dt>
+                                <dd>Description text.</dd>
+                            </dl>
+
+                        </div>
+                    </div>
+
+                    <hr class="uk-grid-divider uk-margin-large">
+
+                    <div class="uk-width-1-1">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><span>Category</span></li>
+                            <li class="uk-active"><span>Post</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="offcanvas-1" class="uk-offcanvas">
+                        <div class="uk-offcanvas-bar">
+
+                            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-active"><a href="#">Active</a></li>
+
+                                <li class="uk-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a>
+                                            <ul>
+                                                <li><a href="#">Sub item</a></li>
+                                                <li><a href="#">Sub item</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="uk-parent">
+                                    <a href="#">Parent</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Item</a></li>
+
+                                <li class="uk-nav-header">Header</li>
+                                <li><a href="#"><i class="uk-icon-star"></i> Item</a></li>
+                                <li><a href="#"><i class="uk-icon-twitter"></i> Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#"><i class="uk-icon-rss"></i> Item</a></li>
+                            </ul>
+
+                            <div class="uk-panel">
+                                <h3 class="uk-panel-title">Title</h3>
+                                Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+                            </div>
+
+                            <div class="uk-panel">
+                                <h3 class="uk-panel-title">Title</h3>
+                                Lorem ipsum dolor sit amet, <a href="#">consetetur</a> sadipscing elitr.
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="modal-1" class="uk-modal">
+                        <div class="uk-modal-dialog">
+                            <button type="button" class="uk-modal-close uk-close"></button>
+                            <h1>Headline</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                  </div>
+
+						    </div>
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- offcanvas menu -->
+    <div id="offcanvas" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+
+          <!-- Home menu -->
+          <li class="uk-parent uk-active"><a href="index.html">Home</a>
+            <ul class="uk-nav-sub">
+              <li><a href="agency-layout.html">Agency Layout</a></li>
+              <li><a href="grid-layout.html">Grid Layout</a></li>
+              <li><a href="grid-margin-layout.html">Grid with margin Layout</a></li>
+              <li><a href="full-slider-layout.html">Full Slider Layout</a></li>
+              <li><a href="video-background.html">Video Background</a></li>
+              <li><a href="blog-layout.html">Blog Layout</a></li>
+            </ul>
+          </li>
+
+          <!-- Features menu -->
+          <li class="uk-parent"><a href="#">Features</a>
+            <ul class="uk-nav-sub">
+              <li><a href="module-layouts.html">Module Layouts</a></li>
+              <li class="uk-parent"><a href="#">Page Layouts</a>
+                <ul>
+                  <li><a href="full-content.html">Full Content</a></li>
+                  <li><a href="left-content.html">Left + Content</a></li>
+                  <li><a href="content-right.html">Content + Right</a></li>
+                  <li><a href="left-content-right.html">Left + Content + Right</a></li>
+                  <li><a href="content-left-right.html">Content + Left + Right</a></li>
+                  <li><a href="left-right-content.html">Left + Right + Content</a></li>
+                </ul>
+              </li>
+              <li><a href="uikit-elements.html">UIkit Elements</a></li>
+              <li><a href="icon-fonts.html">Icon Fonts</a></li>
+              <li><a href="pricing-tables.html">Pricing Tables</a></li>
+              <li><a href="unlimited-colors.html">Unlimited Colors</a></li>
+              <li><a href="light-dark-skins.html">Light &amp; Dark Skins</a></li>
+              <li><a href="rtl-language-support.html">RTL Language Support</a></li>
+            </ul>
+          </li>
+
+          <!-- Elements menu -->
+          <li class="uk-parent"><a href="#">Elements</a>
+            <ul class="uk-nav-sub">
+              <li><a href="shortcodes-typography.html">Typography</a></li>
+              <li><a href="shortcodes-column-blocks.html">Column Blocks</a></li>
+              <li><a href="shortcodes-buttons.html">Buttons</a></li>
+              <li><a href="shortcodes-dropdowns.html">Dropdowns</a></li>
+              <li><a href="shortcodes-alerts.html">Alerts &amp; Badges</a></li>
+              <li><a href="shortcodes-panels.html">Panels</a></li>
+              <li><a href="shortcodes-accordion.html">Accordion &amp; Toggles</a></li>
+              <li><a href="shortcodes-tooltips.html">Tooltips</a></li>
+              <li><a href="shortcodes-progress.html">Progress Bar</a></li>
+              <li><a href="shortcodes-tabs.html">Tabs</a></li>
+              <li><a href="shortcodes-tables.html">Tables</a></li>
+              <li><a href="shortcodes-images.html">Images</a></li>
+              <li><a href="shortcodes-modal-box.html">Modal Box</a></li>
+              <li><a href="shortcodes-lightbox.html">Lightbox</a></li>
+              <li><a href="shortcodes-slideshow.html">Slideshow</a></li>
+              <li><a href="shortcodes-dynamic-grid.html">Dynamic Grid</a></li>
+            </ul>
+          </li>
+
+          <!-- Pages menu -->
+          <li class="uk-parent"><a href="#">Pages</a>
+            <ul class="uk-nav-sub">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="our-team.html">Our Team</a></li>
+              <li><a href="our-services.html">Our Services</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="404.html">404 Error page</a></li>
+            </ul>
+          </li>
+
+          <!-- Layouts menu -->
+          <li class="uk-parent"><a href="#">Layouts</a>
+            <ul class="uk-nav-sub">
+              <li><a href="full-content.html">Full Content</a></li>
+              <li><a href="left-content.html">Left + Content</a></li>
+              <li><a href="content-right.html">Content + Right</a></li>
+              <li><a href="left-content-right.html">Left + Content + Right</a></li>
+              <li><a href="content-right-right.html">Content + Right + Right</a></li>
+              <li><a href="left-left-content.html">Left + Left + Content</a></li>
+            </ul>
+          </li>
+
+          <!-- Portfolio menu -->
+          <li class="uk-parent"><a href="#">Portfolio</a>
+            <ul class="uk-nav-sub">
+              <li><a href="single-portfolio.html">Single Portfolio</a></li>
+              <li><a href="slideshow-portfolio.html">Slideshow Portfolio</a></li>
+              <li><a href="3-column-gallery.html">3 Column Gallery</a></li>
+              <li><a href="4-column-gallery.html">4 Column Gallery</a></li>
+              <li><a href="portfolio-category.html">Portfolio Category</a></li>
+              <li><a href="masonry-portfolio.html">Masonry Portfolio</a></li>
+              <li><a href="masonry-portfolio-margin.html">Masonry Portfolio with margin</a></li>
+            </ul>
+          </li>
+
+          <!-- Blog menu -->
+          <li class="uk-parent"><a href="#">Blog</a>
+            <ul class="uk-nav-sub">
+              <li><a href="blog-item.html">Blog Item</a></li>
+              <li><a href="blog-category.html">Blog Category</a></li>
+              <li><a href="masonry-blog.html">Masonry Blog</a></li>
+            </ul>
+          </li>
+
+          <!-- Contact us menu -->
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- js -->
+  <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+
+  <!-- uikit -->
+  <script src="vendor/uikit/js/uikit.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/accordion.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/grid.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/lightbox.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/sticky.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/tooltip.min.js" type="text/javascript"></script>
+
+  <!-- theme -->
+  <script src="js/theme.js" type="text/javascript"></script>
+  </body>
+ </html>

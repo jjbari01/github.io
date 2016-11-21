@@ -1,0 +1,57 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Tab
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@tab-border:                                    @global-primary-background;
+@tab-color:                                     @global-color;
+@tab-hover-background:                          @global-secondary-background;
+@tab-hover-color:                               @global-contrast-color;
+@tab-hover-border:                              @global-border;
+@tab-active-border:                             @global-border;
+@tab-active-background:                         @global-primary-background;
+@tab-active-color:                              @global-contrast-color;
+@tab-disabled-color:                            @global-muted-color;
+
+
+// Component
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-tab() {}
+
+// Hover
+.hook-tab-hover() {}
+
+// Active
+.hook-tab-active() {}
+
+// Disabled
+.hook-tab-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-tab-misc() {
+
+	.uk-tab-top:before{
+		border-width: 4px;
+		bottom: -4px;
+	}
+
+	.uk-tab-right,
+	.uk-tab-left {
+		border-width: 4px;	
+	}
+
+}

@@ -1,0 +1,146 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Search
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@search-width:                                  @search-padding;
+@search-focus-width:                            120px;
+@search-padding:                                30px;
+@search-height:                                 30px;
+@search-border:                                 rgba(0,0,0,0);
+@search-background:                             rgba(0,0,0,0);
+@search-color:                                  #ffffff;
+@search-placeholder-color:                      rgba(0,0,0,0);
+
+@search-icon-color:                             #ffffff;
+
+@dropdown-search-margin-top:                    15px;
+@dropdown-search-background:                    @global-background;
+@dropdown-search-color:                         @global-color;
+@dropdown-search-navbar-margin-top:             5px;
+@dropdown-search-navbar-margin-right:           0;
+
+@nav-search-color:                              @global-color;
+@nav-search-active-background:                  rgba(0,0,0,0);
+@nav-search-active-color:                       @global-contrast-color;
+@nav-search-header-color:                       @global-muted-color;
+@nav-search-divider-border:                     @global-border;
+@nav-search-nested-color:                       @global-color;
+@nav-search-nested-hover-color:                 @global-link-hover-color;
+
+@offcanvas-search-margin:                       0;
+@offcanvas-search-background:                   rgba(0,0,0,0);
+@offcanvas-search-border:                       @global-border;
+@offcanvas-search-color:                        @global-color;
+@offcanvas-search-placeholder-color:            @global-muted-color;
+@offcanvas-search-icon-color:                   @global-color;
+
+
+// Component
+// ========================================================================
+
+.hook-search() {
+    padding-right: 10px; 
+}
+
+.hook-search-icon() {}
+
+
+// Sub-object `uk-search-field`
+// ========================================================================
+
+.hook-search-field() {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hook-search-field-focus() {}
+
+
+// Modifier: `uk-dropdown-search`
+// ========================================================================
+
+.hook-dropdown-search() {}
+
+
+// Modifier `uk-nav-search`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-search() {}
+
+// Active
+.hook-nav-search-active() {
+    background-color: @global-primary-background;
+}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-search-header() {
+    border-bottom: 1px solid @global-border;
+    color: @global-contrast-color;
+    background-color: @global-primary-background;
+    padding: 10px 15px;
+}
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-search-divider() {
+    margin: 0;
+}
+
+
+// Search in offcanvas
+// ========================================================================
+
+.hook-offcanvas-search-field() {
+    padding: 0 @search-padding;
+    cursor: text;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-search-misc() {
+
+    // Sub-object `uk-search-field`
+    // ========================================================================
+
+    .uk-search-field:focus,
+    .uk-search.uk-active .uk-search-field {
+        padding: 0 @search-padding;
+        cursor: text;
+    }
+
+
+    // Modifier: `uk-nav-search`
+    // ========================================================================
+
+    .uk-nav-search ul.uk-nav-sub { border-bottom: 1px solid @global-border; }
+    .uk-navbar-flip .uk-dropdown-search { padding: 0; }
+
+    .uk-nav-search > li > a {
+        padding: 15px 20px;
+        font-size: @global-font-size+2;
+        border-bottom: 1px dotted @global-border;
+        -webkit-transition: all linear 0.05s;
+                transition: all linear 0.05s;
+    }
+
+}

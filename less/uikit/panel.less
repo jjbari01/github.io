@@ -1,0 +1,536 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Panel
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@panel-title-margin-bottom:                     @global-margin;
+@panel-title-font-size:                         round((@global-font-size * 1.42)); // 21px
+@panel-title-line-height:                       round((@panel-title-font-size * 1.33)); // 28px
+@panel-title-color:                             @global-heading-color;
+
+@panel-box-padding:                             20px;
+@panel-box-background:                          @global-background;
+@panel-box-color:                               @global-color;
+@panel-box-title-color:                         @global-heading-color;
+@panel-box-badge-top:                           0;
+@panel-box-badge-right:                         0;
+
+@panel-box-primary-background:                  @global-primary-background;
+@panel-box-primary-color:                       #ffffff;
+@panel-box-primary-title-color:                 #ffffff;
+
+@panel-box-secondary-background:                @global-secondary-background;
+@panel-box-secondary-color:                     #ffffff;
+@panel-box-secondary-title-color:               #ffffff;
+
+@panel-header-title-padding:                    (@panel-box-padding / 2);
+@panel-header-title-border:                     @global-border;
+@panel-header-title-color:                      @global-heading-color;
+
+@panel-space-padding:                           40px;
+
+@panel-divider-gutter:                          @global-grid-gutter;
+@panel-divider-gutter-large:                    @global-grid-gutter-large;
+@panel-divider-border:                          @global-border;
+
+//
+// New
+//
+
+@panel-box-badge-padding:                       0 8px;
+
+@panel-box-primary-link-color:                  @global-contrast-color;
+@panel-box-primary-link-hover-color:            darken(@global-link-hover-color, 1%);
+
+@panel-box-secondary-link-color:                lighten(@global-link-color, 5%);
+@panel-box-secondary-link-hover-color:          lighten(@global-link-hover-color, 5%);
+
+@panel-title-text-transform:                    uppercase;
+@panel-title-border-width:                      1px;
+
+
+// Sub-object: `uk-panel-title`
+// ========================================================================
+
+.hook-panel-title() {
+    padding-bottom: 15px;
+    display: table;
+    font-weight: @base-heading-font-weight;
+    letter-spacing: @global-heading-letter-space;
+    border-bottom: @panel-title-border-width solid @global-primary-color;
+}
+
+
+// Sub-object: `uk-panel-badge`
+// ========================================================================
+
+.hook-panel-badge() {}
+
+
+// Modifier: `uk-panel-box`
+// ========================================================================
+
+.hook-panel-box() {
+
+
+    /*
+     * Badge in Panel
+     */
+
+    .uk-panel-badge {
+        padding: @panel-box-badge-padding;
+    }
+
+    //
+    // Nav side in panel
+    //
+
+    .uk-nav-side {
+
+        > li > a,
+        .uk-nav-header {
+            padding-left: @panel-box-padding;
+            padding-right: @panel-box-padding;
+        }
+
+        .uk-nav-divider { margin: 0 @panel-box-padding; }
+
+        ul.uk-nav-sub { padding-left: @panel-box-padding + 10px; }
+
+    }
+
+}
+
+//
+// Sub-modifier: `uk-panel-box-primary`
+//
+
+.hook-panel-box-primary() {
+
+    /* link color */
+    > a:not([class]),
+    > :not([class*='uk-nav']) a:not([class]) { color: @panel-box-primary-link-color; }
+
+    > a:not([class]):hover,
+    > :not([class*='uk-nav']) a:not([class]):hover { color: @panel-box-primary-link-hover-color; }
+
+    .uk-module-title {
+        color: @panel-box-primary-title-color;
+    }
+
+    .uk-panel-title {border-bottom: @panel-title-border-width solid @panel-box-primary-color;}
+
+    /*
+     * Nav side
+     */
+
+    .uk-nav-side > li > a {
+        border-color: @global-border;
+        box-shadow: inset 0 1px 0 @global-light-shadow;
+        color: @panel-box-primary-color;
+    }
+
+    .uk-nav-side > li:first-child > a,
+    .uk-nav-divider + li > a  {
+        border: none;
+        box-shadow: none;
+    }
+
+    .uk-subnav.uk-subnav-list > li > a {
+        color: @panel-box-primary-link-color;
+    }
+
+    /*
+     * Sub-object: `uk-nav-header`
+     */
+
+    .uk-nav-side .uk-nav-header { color: @global-light-color; }
+
+    /*
+     * Sub-object: `uk-nav-divider`
+     */
+
+    .uk-nav-divider {
+        border-color: @global-border !important;
+        box-shadow: 0 1px 0 @global-light-shadow;
+    }
+
+    /*
+     * Nested items
+     */
+
+    .uk-nav-side ul.uk-nav-sub {
+        border-color: @global-border;
+        background: @global-border;
+
+    }
+
+    .uk-nav-side ul a { color: @global-light-color; }
+
+    /* Hover */
+    .uk-nav-side > li > a:hover,
+    .uk-nav-side > li > a:focus {
+        background: @global-light-shadow;
+        color: @panel-box-primary-color;
+    }
+
+    /* Active */
+    .uk-nav-side > li.uk-active > a { color: @panel-box-primary-color }
+
+    /*
+     * Horizontal rule
+     */
+
+    hr {
+        height: 1px;
+        border-color: @global-border ;
+        box-shadow: inset 0 1px 0 @global-light-shadow;
+    }
+
+    /*
+     * Headings
+     */
+
+    h1, h2, h3, h4, h5, h6 {
+        color: @panel-box-primary-color;
+    }
+
+    /*
+     * Form
+     */
+
+    .uk-form select,
+    .uk-form textarea,
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="email"] {
+        border-color: @global-border;
+        background: @global-border;
+        color: @panel-box-primary-color;
+
+        /* Focus state */
+        &:focus {
+            border-color: @global-border;
+            background: @global-border;
+            color: @panel-box-primary-color;
+        }
+
+    }
+
+    /* Placeholder */
+    .uk-form :-ms-input-placeholder { color: @panel-box-primary-color !important; }
+    .uk-form ::-moz-placeholder { color: @panel-box-primary-color; }
+    .uk-form ::-webkit-input-placeholder { color: @panel-box-primary-color; }
+
+    /* modal */
+    &.uk-modal-dialog {
+        background-color: @panel-box-primary-background;
+
+        [class*='uk-icon-'] {
+            color: @panel-box-primary-color;
+        }
+    }
+
+}
+
+//
+// Sub-modifier: `uk-panel-box-secondary`
+//
+
+.hook-panel-box-secondary() {
+
+    background-color: @panel-box-secondary-background;
+    box-shadow: none;
+
+    /* link color */
+    > a:not([class]),
+    > :not([class*='uk-nav']) a:not([class]) { color: @panel-box-secondary-link-color; }
+
+    > a:not([class]):hover,
+    > :not([class*='uk-nav']) a:not([class]):hover { color: @panel-box-secondary-link-hover-color; }
+
+    .uk-module-title {
+        color: @panel-box-secondary-title-color;
+    }
+
+    .uk-subnav.uk-subnav-list > li > a {
+        color: @panel-box-secondary-link-color;
+    }
+
+
+    /*
+     * Nav side
+     */
+
+    .uk-nav-side > li > a {
+        border-color: @global-border;
+        box-shadow: inset 0 1px 0 @global-light-shadow;
+        color: @panel-box-secondary-color;
+    }
+
+    .uk-nav-side > li:first-child > a,
+    .uk-nav-divider + li > a  {
+        border: none;
+        box-shadow: none;
+    }
+
+    /*
+     * Sub-object: `uk-nav-header`
+     */
+
+    .uk-nav-side .uk-nav-header { color: @global-light-color; }
+
+    /*
+     * Sub-object: `uk-nav-divider`
+     */
+
+    .uk-nav-divider {
+        border-color: @global-border!important;
+        box-shadow: 0 1px 0 @global-light-shadow;
+    }
+
+    /*
+     * Nested items
+     */
+
+    .uk-nav-side ul.uk-nav-sub {
+        border-color: @global-border;
+        background: @global-border;
+
+    }
+
+    .uk-nav-side ul a { color: @global-light-color; }
+
+    /* Hover */
+    .uk-nav-side > li > a:hover,
+    .uk-nav-side > li > a:focus {
+        background: @global-border;
+        color: @panel-box-secondary-color;
+    }
+
+    /* Active */
+    .uk-nav-side > li.uk-active > a { color: @panel-box-secondary-color }
+
+    /*
+     * Horizontal rule
+     */
+
+    hr {
+        height: 1px;
+        border-color: @global-border ;
+        box-shadow: inset 0 1px 0 @global-light-shadow;
+    }
+
+    /*
+     * Headings
+     */
+
+    h1, h2, h3, h4, h5, h6 {
+        color: @panel-box-primary-color;
+    }
+
+    /*
+     * Form
+     */
+
+    .uk-form select,
+    .uk-form textarea,
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="email"] {
+        border-color: @global-border;
+        background: @global-border;
+        color: @panel-box-primary-color;
+
+        /* Focus state */
+        &:focus {
+            border-color: @global-border;
+            background: @global-border;
+            color: @panel-box-primary-color;
+        }
+
+    }
+
+    /* Placeholder */
+    .uk-form :-ms-input-placeholder { color: @panel-box-secondary-color !important; }
+    .uk-form ::-moz-placeholder { color: @panel-box-secondary-color; }
+    .uk-form ::-webkit-input-placeholder { color: @panel-box-secondary-color; }
+
+    /* modal */
+    &.uk-modal-dialog {
+        background-color: @panel-box-secondary-background;
+    }
+
+}
+
+
+// Modifier: `uk-panel-header`
+// ========================================================================
+
+.hook-panel-header() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-panel-misc() {
+
+    .uk-panel > h3:not(.uk-panel-title):first-child {
+        margin-bottom: 15px;
+    }
+
+    /*
+     * Panel header
+     */
+
+    .uk-panel-header {
+
+        padding: @panel-box-padding;
+        background-color: @panel-box-background;
+
+        .uk-panel-title{
+            padding: 0 @panel-box-padding @panel-box-padding/2;
+            margin: -@panel-box-padding/2 -@panel-box-padding @panel-box-padding/2;
+            border-bottom: 1px solid @global-primary-color;
+            display: block;
+        }
+
+        /*
+         * Badge in Panel
+         */
+
+        .uk-panel-badge {
+            top: 0;
+            right: 0;
+        }
+
+    }
+
+    /*
+     * Panel-person
+     */
+
+    .tm-panel-person {
+        padding: 0;
+        border: 0 !important;
+
+        .uk-panel-teaser {
+            margin: 0 0 15px;
+        }
+
+        .uk-panel-teaser:before {
+            border-bottom: 0;
+        }
+
+        .tm-person-content {
+            padding: 20px 20px 40px;
+
+            .uk-panel-title {
+                display: block;
+            }
+        }
+
+        h4.tm-person-title {
+            padding-bottom: 20px;
+        }
+
+        .tm-person-avatar {
+            max-width: ~"calc(100% - 40px)";
+            margin: 20px 20px 0;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .uk-icon-button {
+            color: @global-contrast-color;
+            font-size: @base-h3-font-size; 
+            width: 35px;
+            height: 35px;
+            border: 1px solid @global-primary-color;
+            line-height: 1.8;
+            border-radius: @global-border-radius;
+            background-color: @global-primary-background;
+        }
+
+        .uk-icon-button:hover{
+            color: @global-color;
+            border-color: @global-color;
+        }
+    }
+
+    /*
+     * Panel teaser
+     */
+
+    .uk-panel-teaser:before {
+        z-index: 10;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid @global-border;
+    }
+
+    .tm-teaser-left .tm-panel-content {
+        display: table;
+    }
+
+    .tm-teaser-left .tm-panel-content p {
+        margin: 0;
+    }
+
+    .tm-teaser-left .uk-panel-title,
+    .tm-teaser-right .uk-panel-title {
+        padding: 15px 0 10px;
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+    }
+
+    .tm-teaser-left.uk-panel-box,
+    .tm-teaser-right.uk-panel-box {
+        border-top: 0;
+    }
+
+    .tm-teaser-left img {
+        float: left; 
+        margin-right: @panel-box-padding;
+    }
+
+    .tm-teaser-right img {
+        float: right;
+        margin-left: @panel-box-padding;
+    }
+
+    .tm-teaser-left.uk-panel-box {
+        padding: @panel-box-padding @panel-box-padding 0;
+    }
+
+    .tm-teaser-left .uk-panel-teaser {
+        margin: -@panel-box-padding -@panel-box-padding 15px -@panel-box-padding;
+    }
+
+    @media (max-width: @breakpoint-medium) {
+        
+        .tm-teaser-left img {
+            float: none; 
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: @panel-box-padding;
+        }
+
+        .tm-teaser-left .tm-panel-content {
+            width: 100%;
+        }
+
+        .tm-teaser-left.uk-panel-box {
+            padding: @panel-box-padding 
+        }
+    }
+}

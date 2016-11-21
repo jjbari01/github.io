@@ -1,0 +1,108 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Overlay
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@overlay-panel-color:                           @global-contrast-color;
+@overlay-panel-background:						fade(@global-default-background, 50%);
+@overlay-icon-color:                            @global-contrast-color;
+
+@overlay-icon-size:								40px;
+@overlay-icon:									"\e038";
+
+// Sub-object `uk-overlay-panel`
+// ========================================================================
+
+.hook-overlay-panel() {}
+
+
+// Sub-object `uk-overlay-background`
+// ========================================================================
+
+.hook-overlay-background() {
+	text-shadow: 2px 2px 0 @global-dark-shadow;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05) inset, 
+    			0 0 0 6px rgba(255, 255, 255, 0.3) inset;
+	.gradient(@overlay-panel-background, spin(@overlay-panel-background, 15), spin(@overlay-panel-background, -15));
+
+}
+
+
+// Sub-object `uk-overlay-icon`
+// ========================================================================
+
+.hook-overlay-icon() {
+	font-family: @line-icon-font-family;
+	top: auto;
+	bottom: 20px;
+	left: auto;
+	right: 20px;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+// Sub-object `uk-overlay-area`
+// ========================================================================
+
+.hook-overlay-area() {}
+.hook-overlay-area-icon() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-overlay-misc() {
+
+	.uk-overlay > img.uk-thumbnail {
+		max-width: 95%;
+		max-width: ~"calc(100% - 10px)";
+		margin: 5px;
+	}
+
+	.uk-modal-dialog.uk-modal-dialog-small{
+		width: 350px;
+	}
+
+	.uk-overlay-background.tm-overlay-secondary {
+		.gradient(fade(@global-secondary-background, 50%), spin(fade(@global-secondary-background, 50%), 15), spin(fade(@global-secondary-background, 50%), -15));
+	}
+
+	.uk-overlay-active .uk-overlay-fade, 
+	.uk-overlay-active .uk-overlay-scale, 
+	.uk-overlay-active .uk-overlay-spin, 
+	.uk-overlay-active [class*='uk-overlay-slide'] {
+		transition-duration: 0.4s;
+	}
+
+	.uk-overlay-blur {
+		-webkit-filter: blur(2px);
+				filter: blur(2px);
+	}
+
+	.uk-overlay-slide-top {
+	    -webkit-transform: translateY(-20%);
+	    transform: translateY(-20%);
+	}
+
+	.uk-overlay-slide-bottom {
+	    -webkit-transform: translateY(20%);
+	    transform: translateY(20%);
+	}
+
+	.uk-overlay-slide-left {
+	    -webkit-transform: translateX(-5%);
+	    transform: translateX(-5%);
+	}
+
+	.uk-overlay-slide-right {
+	    -webkit-transform: translateX(5%);
+	    transform: translateX(5%);
+	}
+
+}

@@ -1,0 +1,36 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Modal
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@modal-z-index:                                 (@global-z-index + 10);
+
+@modal-dialog-background:                       @global-background;
+
+
+// Component
+// ========================================================================
+
+.hook-modal() {
+	box-shadow: @global-box-shadow-size @global-box-shadow;
+}
+
+
+// Sub-object: `uk-modal-dialog`
+// ========================================================================
+
+.hook-modal-dialog() {
+	padding: @panel-box-padding*2;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-modal-misc() {}

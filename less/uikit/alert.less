@@ -1,0 +1,68 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Alert
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@alert-margin-vertical:                         @global-margin;
+@alert-background:                              fade(@alert-color, 10%);
+@alert-color:                                   @global-default-background;
+
+@alert-success-background:                      fade(@global-success-background, 10%);
+@alert-success-color:                           darken(@global-success-background, 10%);
+
+@alert-warning-background:                      fade(@global-warning-background, 10%);
+@alert-warning-color:                           @global-warning-background;
+
+@alert-danger-background:                       fade(@global-danger-background, 10%);
+@alert-danger-color:                            darken(@global-danger-background, 10%);
+
+
+// Component
+// ========================================================================
+
+.hook-alert() {
+	box-shadow: inset 0 0 0 1px fade(@alert-background, 30%);
+	border-radius: 0;
+}
+
+
+// Modifier: `uk-alert-success`
+// ========================================================================
+
+.hook-alert-success() {
+	box-shadow: inset 0 0 0 1px fade(@alert-success-background, 40%);
+}
+
+
+// Modifier: `uk-alert-warning`
+// ========================================================================
+
+.hook-alert-warning() {
+	box-shadow: inset 0 0 0 1px fade(@alert-warning-background, 40%);
+}
+
+
+// Modifier: `uk-alert-danger`
+// ========================================================================
+
+.hook-alert-danger() {
+	box-shadow: inset 0 0 0 1px fade(@alert-danger-background, 40%);
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-alert-misc() {
+
+	.uk-alert .uk-module-title {
+		border-color: inherit; 
+	}
+
+}

@@ -1,0 +1,138 @@
+// Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Dropdown
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dropdown-z-index:                              (@global-z-index + 20);
+@dropdown-background:                           @global-background;
+@dropdown-color:                                @global-color;
+@dropdown-margin-top:                           10px;
+@dropdown-padding:                              25px;
+@dropdown-width:                                250px;
+@dropdown-divider-border:                       @global-border;
+@dropdown-small-padding:                        15px;
+
+@dropdown-navbar-margin:                        0;
+@dropdown-navbar-background:                    @global-background;
+@dropdown-navbar-color:                         @global-color;
+@dropdown-animation:							uk-slide-top-fixed;
+
+//
+// New
+//
+
+@dropdown-box-shadow-size: 						@global-box-shadow-size;
+@dropdown-box-shadow:							@global-box-shadow;
+@dropdown-navbar-animation:						@dropdown-animation;
+
+// Component
+// ========================================================================
+
+.hook-dropdown() {
+	box-shadow: @dropdown-box-shadow-size @dropdown-box-shadow;
+}
+
+
+// Modifier: `uk-dropdown-navbar`
+// ========================================================================
+
+.hook-dropdown-navbar() {
+	box-shadow: @global-box-shadow-size @global-box-shadow;
+	padding: 0;
+
+	.uk-nav-navbar > li > a {
+		padding: 7px 18px;
+		font-size: @navbar-nav-font-size;
+		text-transform: @navbar-nav-text-transform;
+		letter-spacing: @navbar-nav-letter-spacing;
+	}
+
+	.uk-nav-navbar > li.uk-active > a,
+	.uk-nav-navbar ul li.uk-active > a {
+		background-color: @theme-menuitem-hover-background;
+		color: @theme-menuitem-hover-color;
+	}
+
+	.uk-nav-navbar ul a {
+		text-transform: @navbar-nav-text-transform;
+		letter-spacing: @navbar-nav-letter-spacing;
+		padding: 7px 18px;
+	}
+
+	.uk-nav-header {
+		padding: 7px @dropdown-small-padding;
+	}
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dropdown-misc() {
+
+    .uk-dropdown-navbar .uk-nav-navbar > li > a:hover,
+    .uk-dropdown-navbar .uk-nav-navbar > li > a:focus {
+        color: @theme-menuitem-hover-color;
+        background-color: @theme-menuitem-hover-background;
+    }
+
+	@media (min-width: @breakpoint-medium) {
+
+	    .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid {
+	        margin-left: 0;
+	        margin-right: 0;
+	    }
+
+	    .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-'] {
+	        padding-left: 0;
+	        padding-right: 0;
+	    }
+
+	    .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+	    	box-shadow: inset 1px 0 0 @global-lighter-shadow;
+	    }
+	}
+
+	/* Nav in dropdown
+	 ========================================================================== */
+
+	.uk-dropdown .uk-nav { margin: 0; }
+
+	.tm-navbar {
+		.uk-dropdown .uk-nav {
+			margin: 0
+		}
+
+		li.uk-parent > ul {
+			border-bottom: 0;
+			box-shadow: @dropdown-box-shadow-size @dropdown-box-shadow;
+		}
+
+		.uk-dropdown li.uk-parent > a:before {
+				position: absolute;
+				content: "\f142";
+				right: 15px;
+				font-size: 14px;
+				font-family: "fontAwesome";
+				color: darken(@theme-menubar-dropdown-background, 15%);
+		}
+
+		.uk-dropdown li.uk-parent:hover > a:before {
+				color: darken(@theme-menuitem-hover-background, 15%);
+		}
+
+	}
+
+	/* button dropdown */
+	.uk-button-dropdown .uk-dropdown .uk-nav {
+		margin: 0 15px 0 0;
+	}
+
+}
