@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="database, portfolio, web developer, sql, sas " />
+  <meta name="keywords" content="database, portfolio, web developer, sql, sas, resume " />
   <meta name="description" content="Responsive Portfolio Template" />
-  <meta name="author" content="jjb">
-  <title>Home - jjb</title>
+  <meta name="author" content="Home">
+  <title>Home-jjb</title>
 
   <!-- fav icon -->
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -23,7 +23,7 @@
 <body>
 
   <!-- preloader -->
-  <div class="tm-preload">f
+  <div class="tm-preload">
     <div class="spinner"></div>
   </div>
 
@@ -39,7 +39,7 @@
       <!-- small logo -->
       <div class="uk-navbar-content uk-visible-small">
         <a class="tm-logo-small" href="index.html">
-        	<img src="images/demo/default/logo/sunflower_bw.jpg" width="200" height="60" alt="demo">
+          <img src="images/demo/default/logo/sunflower_bw.jpg" width="200" height="60" alt="demo">
         </a>
       </div>
 
@@ -47,22 +47,24 @@
       <nav class="tm-navbar uk-navbar">
         <ul class="uk-navbar-nav uk-hidden-small">
 
+          <!-- Home menu -->
+          <li><a href="index.html">Home</a>
+
           <!-- About Me menu -->
           <li><a href="about-me.html">About Me</a>
-
-
+            
           <!-- Portfolio menu -->
           <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
             <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
               <div class="uk-grid uk-dropdown-grid">
                 <div class="uk-width-1-1">
                   <ul class="uk-nav uk-nav-navbar">
-                    <li><a href="businessAnalysis.html">Business Analysis</a></li>
-                    <li><a href="dataAnalysis.html">Data Analysis</a></li>
-                    <li><a href="databaseDesign.html">Database Design</a></li>
-                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
-                    <li><a href="programming.html">Programming</a></li>
-                    <li><a href="webDevelopment.html">Web Development</a></li>
+                    <li><a href="businessAnalysis.html">Business Analysis (CIS 410)</a></li>
+                    <li><a href="dataAnalysis.html">Data Analysis (CIS 445)</a></li>
+                    <li><a href="databaseDesign.html">Database Design (CIS 310)</a></li>
+                    <li><a href="systemAnalysis.html">Systems Analysis (CIS320)</a></li>
+                    <li><a href="programming.html">Programming (CIS 199, 200, 220)</a></li>
+                    <li><a href="webDevelopment.html">Web Development (CIS420)</a></li>
                   </ul>
                 </div>
               </div>
@@ -75,6 +77,7 @@
         </ul>
       </nav>
 
+
       <!-- header side section-->
       <div class="tm-header-side">
         <div class=" uk-hidden-small">
@@ -85,11 +88,8 @@
           <a href="https://www.linkedin.com/in/jenet-baribeau-17089811" class="uk-icon-button uk-icon-linkedin" target="_blank"></a>
         </div>
 
-        <!-- grid filter -->
-        <div class="">
-          <ul id="grid1" class="uk-subnav uk-subnav-pill">
-         
-          </ul>
+        <div class=" uk-hidden-small">
+          <p></p>
         </div>
       </div>
 
@@ -101,7 +101,7 @@
       <!-- footer -->
       <footer class="tm-footer uk-width-1-1">
         <div class="">
-	         <p class="uk-text-center">Copyright &copy; <a href="http://goo.gl/fpWYUL" target="_blank">Jenet Baribeau</a></p>
+           <p class="uk-text-center">Copyright &copy; <a href="http://goo.gl/fpWYUL" target="_blank">Jenet Baribeau</a></p>
         </div>
       </footer>
 
@@ -110,464 +110,92 @@
     </div>
   </div>
 
-  <!-- masonry grid -->
-  <div class="tm-grid">
-    <div class="">
-  	  <div class="tm-dynamic-grid uk-grid-width-1-1 uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 " data-uk-grid="{gutter: 0, controls: '#grid1'}">
+    <!-- main container -->
+    <div class="uk-container tm-sheet uk-animation-fade">
 
-        <!-- grid item -->
-        <div data-uk-filter="photography">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/1.jpg" width="362" height="453" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Einstein</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>We can't solve problems by using the same kind of thinking we used when we created them.</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/1.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Photo effects"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
+      <!-- to top scroller -->
+      <div class="uk-sticky-placeholder">
+        <div data-uk-smooth-scroll data-uk-sticky="{top:-500}">
+          <a class="tm-totop-scroller uk-animation-slide-bottom" href="#" ></a>
         </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/2.jpg" width="362" height="271" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Ride the trail</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Good things come, not to the fast, but to those who wait.</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/2.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Ride the trail"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="illustration">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/3.jpg" width="362" height="453" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center uk-ignore">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Read everyday</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it</p>
-                    <a class="uk-button-default uk-button" href="#" target="_self">Read more</a>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/3.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Read everyday"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/4.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Blown away</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Always continue the climb. It is possible for you to do whatever you choose</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/4.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Blown away"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="photography,media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/5.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Spectacular</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Life is a series of natural and spontaneous changes. Don't resist them - that only creates sorrow. Let reality be reality</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/5.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Clear lens"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="illustration,webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/6.jpg" width="362" height="453" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Music for the soul</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Let things flow naturally forward in whatever way they like. Live each day as it were your last.</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/6.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Music for the soul"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/7.jpg" width="453" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Live. Life.</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>You only live once. Take up one idea. Make that one idea your life - think of it, dream of it</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/7.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Live. Life"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/8.jpg" width="362" height="453" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center uk-ignore">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Super bowl</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/8.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Super bowl"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/9.jpg" width="362" height="271" alt="image" >
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="photography">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/10.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Unlock the door</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Design is not what it looks like; Design is how it works. Good design speaks volumes about the designer</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/10.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Unlock the door"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/11.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">First cup</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Good things come, not to the fast, but to those who wait.</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/11.jpg" data-uk-lightbox="{group:'porfolio1'}" title="First cup"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/12.jpg" width="362" height="271" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Cute</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Believe in yourself! Have faith in your abilities</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/12.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Cute"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="photography">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/13.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                <h3 class="uk-h3 tm-grid-title uk-margin">Tie a knot</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Design is not what it looks like; Design is how it works. Good design speaks volumes about the designer</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/13.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Tie a knot"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/14.jpg" width="362" height="271" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Take action</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Good things come, not to the fast, but to those who wait.</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/14.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Take action"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="photography">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/15.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Ride the trail</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/15.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Ride the trail"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/16.jpg" width="362" height="271" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Old is gold</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Always continue the climb. It is possible for you to do whatever you choose</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/16.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Old is gold"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="photography,media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/17.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Go. Green.</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Life is a series of natural and spontaneous changes. Don't resist them - that only creates sorrow. Let reality be reality</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/17.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Go. Green."></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="illustration,webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/18.jpg" width="362" height="362" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Daily bread</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>Let things flow naturally forward in whatever way they like. Live each day as it were your last.</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/18.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Daily bread"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="media">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/19.jpg" width="362" height="271" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-flex uk-flex-center uk-flex-middle uk-text-center uk-ignore">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">Live. Life.</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>You only live once. Take up one idea. Make that one idea your life - think of it, dream of it</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/19.jpg" data-uk-lightbox="{group:'porfolio1'}" title="Live. Life"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-        <!-- grid item -->
-        <div data-uk-filter="webdesign">
-          <div class="uk-panel uk-animation-fade">
-            <figure class="uk-overlay uk-overlay-hover">
-              <img class="uk-overlay-scale uk-overlay-grayscale" src="images/demo/grid/20.jpg" width="362" height="453" alt="image" >
-
-              <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                <div>
-                  <h3 class="uk-h3 tm-grid-title uk-margin">It's spring time</h3>
-                  <div class="uk-margin-small tm-grid-content">
-                    <p>if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it</p>
-
-                    <!-- lightbox image -->
-                    <a class="uk-position-cover" href="images/demo/grid/20.jpg" data-uk-lightbox="{group:'porfolio1'}" title="It's spring time"></a>
-                  </div>
-                </div>
-              </div>
-
-            </figure>
-          </div>
-        </div>
-
-  </div></div></div>
-
-  <!-- main container -->
-  <div class="uk-container tm-sheet uk-animation-fade">
-
-    <!-- to top scroller -->
-    <div class="uk-sticky-placeholder">
-      <div data-uk-smooth-scroll data-uk-sticky="{top:-500}">
-        <a class="tm-totop-scroller uk-animation-slide-bottom" href="#" ></a>
       </div>
+
+      <!-- header top position -->
+      <section class="tm-header-top uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}">
+        <div class="uk-width-1-1">
+          <div class="uk-panel uk-panel-box tm-block tm-padding-remove">
+
+             
+
+      <!-- main content -->
+      <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
+        <div class="tm-main uk-width-medium-1-1">
+          <main class="tm-content">
+
+            <!-- article -->
+            <article class="uk-article">
+              <div class="tm-article-wrapper">
+                <div class=" tm-article-content uk-margin-large-bottom uk-margin-top-remove">
+                  <h1 class="uk-article-title">Jenet J Baribeau</h1>
+
+                  <div class="tm-article">
+                    <div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin>
+                      <div class="uk-block">
+                      <h4 class="uk-module-title">Skills</h4>
+                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-settings"></span>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</p>
+                      </div>
+
+                      <div class="uk-block">
+                      <h4 class="uk-module-title">Framework</h4>
+                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-layers"></span>Never be bullied into silence. Never allow yourself to be made a victim. Accept no one's definition.</p>
+                      </div>
+
+                      <div class="uk-block">
+                      <h4 class="uk-module-title">Strategy</h4>
+                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-handbag"></span>Do not dream of the future, concentrate the mind on the present moment. Dream big. Go forward. </p>
+                      </div>
+
+                      <div class="uk-block">
+                      <h4 class="uk-module-title">UX Design</h4>
+                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-mouse"></span>Everything should be as simple as it is, but not simpler; Believe that life is worth living and your belief.</p>
+                      </div>
+
+                      <div class="uk-block">
+                      <h4 class="uk-module-title">Quality</h4>
+                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-vector"></span>Never be bullied into silence. Never allow yourself to be made a victim. Accept no one's definition.</p>
+                      </div>
+
+                      <div class="uk-block">
+                      <h4 class="uk-module-title">Trust</h4>
+                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-badge"></span>Do not dream of the future, concentrate the mind on the present moment. Dream big. Go forward. </p>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    <div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin>
+                      <div class="uk-width-medium-1-4">
+
+                        
+                  </div>
+                </div>
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
+
     </div>
 
-  </div>
+    <!-- offcanvas menu -->
+    <div id="offcanvas" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
 
-  <!-- offcanvas menu -->
-  <div id="offcanvas" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar">
-      <ul class="uk-nav uk-nav-offcanvas">
-
-        <!-- Home menu -->
+          <!-- Home menu -->
         <li class="uk-parent uk-active"><a href="index.html">Home</a>
           <ul class="uk-nav-sub">
-          <!-- About Me menu -->
-          <li><a href="about-me.html">About Me</a>
           </ul>
         </li>
 
@@ -582,12 +210,11 @@
                     <li><a href="webDevelopment.html">Web Development</a></li>
           </ul>
         </li>
+          <!-- Contact me menu -->
+          <li><a href="contact-me.html">Contact Me</a></li>
 
-        <!-- Contact me menu -->
-        <li><a href="contact-me.html">Contact Me</a></li>
-      </ul>
-    </div>
-  </div>
+        </div>
+      </div>
 
   <!-- js -->
   <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
@@ -603,6 +230,46 @@
 
   <!-- theme -->
   <script src="js/theme.js" type="text/javascript"></script>
-</body>
-</html>
-\ No newline at end of file
+  </body>
+ </html></a></p>
+        </div>
+      </footer>
+
+      <!-- offcanvas menu toggle -->
+      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small uk-flex uk-flex-middle" data-uk-offcanvas><span></span></a>
+    </div>
+  </div>
+
+    <!-- main container -->
+    <div class="uk-container tm-sheet uk-animation-fade">
+
+      <!-- to top scroller -->
+      <div class="uk-sticky-placeholder">
+        <div data-uk-smooth-scroll data-uk-sticky="{top:-500}">
+          <a class="tm-totop-scroller uk-animation-slide-bottom" href="#" ></a>
+        </div>
+      </div>
+
+      <!-- header top position -->
+      <section class="tm-header-top uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}">
+        <div class="uk-width-1-1">
+          <div class="uk-panel uk-panel-box tm-block tm-padding-remove">
+
+ 
+
+  <!-- js -->
+  <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+
+  <!-- uikit -->
+  <script src="vendor/uikit/js/uikit.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/accordion.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/grid.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/lightbox.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/sticky.min.js" type="text/javascript"></script>
+  <script src="vendor/uikit/js/components/tooltip.min.js" type="text/javascript"></script>
+
+  <!-- theme -->
+  <script src="js/theme.js" type="text/javascript"></script>
+  </body>
+ </html>
