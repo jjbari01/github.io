@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="database, portfolio, web developer, sql, sas" />
+  <meta name="keywords" content="database, portfolio, web developer, sql, sas, resume " />
   <meta name="description" content="Responsive Portfolio Template" />
-  <meta name="author" content="contact me">
+  <meta name="author" content="Contact Me">
   <title>Contact Me</title>
 
   <!-- fav icon -->
@@ -33,13 +33,13 @@
 
       <!-- logo -->
       <a class="tm-logo uk-hidden-small uk-text-center" href="index.html">
-        <img src="images/demo/default/logo/sunflower_bw.jpg" width="300" height="120" alt="demo">
+        <img src="images/demo/default/logo/sunflower_bw.jpg" width="200" height="180" alt="demo">
       </a>
 
       <!-- small logo -->
       <div class="uk-navbar-content uk-visible-small">
         <a class="tm-logo-small" href="index.html">
-          <img src="images/demo/default/logo/sunflower_bw.jpg" width="200" height="60" alt="demo">
+        	<img src="images/demo/default/logo/sunflower_bw.jpg" width="173" height="60" alt="demo">
         </a>
       </div>
 
@@ -47,13 +47,15 @@
       <nav class="tm-navbar uk-navbar">
         <ul class="uk-navbar-nav uk-hidden-small">
 
-          <!-- Home menu -->
-          <li><a href="index.html">Home</a>
+          <!-- home menu  -->
+          <li><a href="index.html">Home</a></li>
 
           <!-- About Me menu -->
-          <li><a href="about-me.html">About Me</a>
+          <li><a href="about-me.html">About Me</a></li>
 
-          <!-- Portfolio menu -->
+          
+
+        <!-- Portfolio menu -->
           <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
             <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
               <div class="uk-grid uk-dropdown-grid">
@@ -61,15 +63,22 @@
                   <ul class="uk-nav uk-nav-navbar">
                     <li><a href="businessAnalysis.html">Business Analysis</a></li>
                     <li><a href="dataAnalysis.html">Data Analysis</a></li>
-                    <li><a href="databaseDesign.html">Database Design<a></li>
-                    <li><a href="systemAnalysis.html">Systems Analysis</a></li><li><a href="businessWriting.html">Business Writing</a></li>
+                    <li><a href="databaseDesign.html">Database Design</a></li>
+                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
+                    <li><a href="businessWriting.html">Business Writing</a></li>
+                    <li><a href="businessWriting.html">Project Management</a></li>
                     <li><a href="programming.html">Programming</a></li>
-                    <li><a href="webDevelopment.html">Web Development</a></li>
+                    
                   </ul>
                 </div>
               </div>
             </div>
           </li>
+
+          
+
+          <!-- Contact us menu -->
+          <li class="uk-active"><a href="contact-us.html">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -83,9 +92,6 @@
           <a href="https://www.linkedin.com/in/jenet-baribeau-17089811" class="uk-icon-button uk-icon-linkedin" target="_blank"></a>
         </div>
 
-        <div class=" uk-hidden-small">
-          <p></p>
-        </div>
       </div>
 
       <!-- vertical menu toggle -->
@@ -96,7 +102,8 @@
       <!-- footer -->
       <footer class="tm-footer uk-width-1-1">
         <div class="">
-           <p class="uk-text-center">Copyright &copy; <a href="http://goo.gl/fpWYUL" target="_blank">Jenet Baribeau
+	         <p class="uk-text-center">Copyright &copy; <a href="http://goo.gl/fpWYUL" target="_blank">Jenet Baribeau</a></p>
+        </div>
       </footer>
 
       <!-- offcanvas menu toggle -->
@@ -114,8 +121,12 @@
       </div>
     </div>
 
+    <!-- header-top -->
+    <section class="tm-header-top uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}">
+      <div class="uk-width-1-1">
 
-
+      
+        
     <!-- main content -->
     <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
       <div class="tm-main uk-width-medium-1-2">
@@ -169,7 +180,7 @@
 
                       <!-- submit button -->
                       <div class="form-actions">
-                        <button id="Submitbtn" class="uk-button uk-button-primary" type="submit">Submit</button>
+                      	<button id="Submitbtn" class="uk-button uk-button-primary" type="submit">Submit</button>
                       </div>
 
                       <div id="message"></div>
@@ -178,31 +189,27 @@
                   </div>
                 </div>
 
-              </div>
+					    </div>
             </div>
           </article>
         </main>
       </div>
 
-    </div>
-
-  </div>
-
+      
   <!-- offcanvas menu -->
-    <div id="offcanvas" class="uk-offcanvas">
-      <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas">
+  <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-offcanvas">
 
-          <!-- Home menu -->
+        <!-- Home menu -->
         <li class="uk-parent uk-active"><a href="index.html">Home</a>
           <ul class="uk-nav-sub">
           </ul>
         </li>
 
         <!-- About Me menu -->
-        <li class="uk-parent uk-active"><a href="abou-me.html">About Me</a>
-          <ul class="uk-nav-sub">
-          </ul>
+        <li class="uk-parent uk-active"><a href="about-me.html">About Me</a>
+
         </li>
 
         <!-- Portfolio menu -->
@@ -218,8 +225,12 @@
           </ul>
         </li>
 
-        </div>
-      </div>
+        <!-- Contact me menu -->
+        <li><a href="contact-me.html">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+
   <!-- js -->
   <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
 
