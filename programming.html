@@ -53,16 +53,24 @@
           <!-- About me menu -->
           <li><a href="about-me.html">About Me</a>
 
-          <!-- Portfolio menu -->
-          <!-- header side section-->
-          <div class="tm-header-side">
-          <div><h3 class="uk-panel-title">Portfolio</h3>
-              <p><li><a href="systemAnalysis.html">Systems Analysis</a></li>
+                    <!-- Portfolio menu -->
+          <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
                     <li><a href="businessAnalysis.html">Business Analysis</a></li>
                     <li><a href="dataAnalysis.html">Data Analysis</a></li>
                     <li><a href="databaseDesign.html">Database Design</a></li>
+                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
                     <li><a href="businessWriting.html">Business Writing</a></li>
-                    <li><a href="projectMgmt.html">Project Management</a></li></p>
+                    <li><a href="businessWriting.html">Project Management</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
 
           <!-- Contact me menu -->
           <li><a href="contact-me.html">Contact Me</a></li>
@@ -150,7 +158,7 @@
               <h3 class="uk-module-title">CIS 200: Software Development II</h3>
               <p>Further exploration into object-oriented software development. Apply the object model to systems development problems focusing on polymorphis, inheritance and object interaction. Application areas include searching, sorting and adding/modifying databases. The assignments demonstrate a sample of the full code used for the project.</p>
 
-              <p><ul class="uk-tab uk-tab-grid uk-tab-top" data-uk-tab="{connect:'#tabs_example1', animation: 'fade'}">
+              <p><ul class="uk-tab uk-tab-grid uk-tab-top" data-uk-tab="{connect:'#tabs_example2', animation: 'fade'}">
               <li class="uk-active">
               <a href="#">Program 0</a></li>
               <li><a href="#">Program 1A</a></li>
@@ -160,14 +168,13 @@
               <li><a href="#">Program 4</a></li>
               </ul>
 
-              <ul id="tabs_example1" class="uk-switcher uk-margin uk-tab-content">
+              <ul id="tabs_example2" class="uk-switcher uk-margin uk-tab-content">
               <li>Program 0 explores the use of composition (HAS-A) and inheritance relationships between classes.[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog0.pdf">Program 0</a></li>
               <li>Program 1A creates a class hierarchy including elemnts of polymorphism. [code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog1A.pdf">Program 1A</a><br/>
               <a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog1A_ClassDiagram.pdf">Prog1A Class Diagram</a></li>
               <li>Program 1B explores the use of LINQ to extract queried reports.[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog1B.pdf">Program 1B</a></li>
               <li>Program 2 creates a GUI with use of dialog boxes, validation, and exception handling. [code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog2.pdf">Program 2</a></li>
-              <li>Program 3 probes into I/O  and object serialization also expanding the GUI application development from Program 2. [code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog3.pdf">Program 3</a></li>
-              <li>[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog4.pdf">Program 4</a></li>
+              <li>Program 3 probes into I/O  and object serialization also expanding the GUI application development from Program 2. [code sample; ] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog3.pdf">Program 3</a></li>
               <li>Program 4 demonstrates Type Sorting orders using comparers and natural ordering of classes.[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS200/Prog4.pdf">Program 4</a></li>
               </ul> </p>
 
@@ -177,7 +184,7 @@
               <h3 class="uk-module-title">CIS 199: Software Development I</h3>
               <p>Introduction into object-oriented concepts such as the use of classes, methods, encapsulation and inheritance. A concentration on using object-oriented programming to solve simple problems.</p>
 
-              <p><ul class="uk-tab uk-tab-grid uk-tab-top" data-uk-tab="{connect:'#tabs_example1', animation: 'fade'}">
+              <p><ul class="uk-tab uk-tab-grid uk-tab-top" data-uk-tab="{connect:'#tabs_example3', animation: 'fade'}">
               <li class="uk-active">
               <a href="#">Program 1</a></li>
               <li><a href="#">Program 2</a></li>
@@ -185,11 +192,11 @@
               <li><a href="#">Program 4</a></li>
               </ul>
 
-              <ul id="tabs_example1" class="uk-switcher uk-margin uk-tab-content">
-              <li>Write something here[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog1.pdf">Program 1</a></li>
-              <li>Write something here[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog2.pdf">Program 2</a></li>
-              <li>Write something here[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog3.pdf">Program 3</a></li>
-              <li>Write something here[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog4.pdf">Program 4</a></li>
+              <ul id="tabs_example3" class="uk-switcher uk-margin uk-tab-content">
+              <li>Program 1 introduced the use of vairables and arithmetic. [code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog1.pdf">Program 1</a></li>
+              <li>Program 2 explores the use of decision making logic and the creating of a GUI application. [code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog2.pdf">Program 2</a></li>
+              <li>Program 3 demonstrated use of parallel arrays and range matching. [code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog3.pdf">Program 3</a></li>
+              <li>Program 4 creates a reusable class and separate GUI applications that interact by creating a list of objects.[code sample] <br/><a class = "uk-icon-file-pdf-o" target="_blank" href="documents/CIS199/Prog4.pdf">Program 4</a></li>
               </ul> </p>
 
 

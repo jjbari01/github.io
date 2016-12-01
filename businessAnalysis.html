@@ -54,15 +54,24 @@
           <li><a href="about-me.html">About Me</a>
 
           <!-- Portfolio menu -->
-          <!-- header side section-->
-          <div class="tm-header-side">
-          <div><h3 class="uk-panel-title">Portfolio</h3>
-              <p><li><a href="systemAnalysis.html">Systems Analysis</a></li>
+          <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
+            <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+              <div class="uk-grid uk-dropdown-grid">
+                <div class="uk-width-1-1">
+                  <ul class="uk-nav uk-nav-navbar">
+                    
                     <li><a href="dataAnalysis.html">Data Analysis</a></li>
                     <li><a href="databaseDesign.html">Database Design</a></li>
+                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
                     <li><a href="businessWriting.html">Business Writing</a></li>
+                    <li><a href="businessWriting.html">Project Management</a></li>
                     <li><a href="programming.html">Programming</a></li>
-                    <li><a href="projectMgmt.html">Project Management</a></li></p>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
 
           <!-- Contact me menu -->
           <li><a href="contact-me.html">Contact Me</a></li>
@@ -88,10 +97,40 @@
         </div>
       </footer>
 
-      <!-- offcanvas menu toggle -->
-      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small uk-flex uk-flex-middle" data-uk-offcanvas><span></span></a>
-    </div>
-  </div>
+    <!-- offcanvas menu -->
+    <div id="offcanvas" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+
+          <!-- Home menu -->
+        <li class="uk-parent uk-active"><a href="index.html">Home</a>
+          <ul class="uk-nav-sub">
+          </ul>
+        </li>
+
+        <!-- About Me menu -->
+        <li class="uk-parent uk-active"><a href="abou-me.html">About Me</a>
+          <ul class="uk-nav-sub">
+          </ul>
+        </li>
+
+        <!-- Portfolio menu -->
+        <li class="uk-parent"><a href="#">Portfolio</a>
+          <ul class="uk-nav-sub">
+                    <li><a href="businessAnalysis.html">Business Analysis</a></li>
+                    <li><a href="dataAnalysis.html">Data Analysis</a></li>
+                    <li><a href="databaseDesign.html">Database Design</a></li>
+                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
+                    <li><a href="businessWriting.html">Business Writing</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="projectMgmt.html">Project Management</a></li>
+          </ul>
+        </li>
+          <!-- Contact me menu -->
+          <li><a href="contact-me.html">Contact Me</a></li>
+
+        </div>
+      </div>
 
   <!-- main container -->
   <div class="uk-container tm-sheet uk-animation-fade">

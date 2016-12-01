@@ -2218,8 +2218,8 @@ hr:after {
 /* Sub-object `uk-article-meta`
  ========================================================================== */
 .uk-article-meta {
-  font-size: 12px;
-  line-height: 30px;
+  font-size: 10px;
+  line-height: 20px;
   color: #3c3c3c;
   text-transform: uppercase;
   color: #6f6f6f;
@@ -2432,7 +2432,7 @@ hr:after {
   font-size: 12px;
 }
 .uk-nav-header:not(:first-child) {
-  margin-top: 15px;
+  margin-top: 0px;
 }
 /* Sub-object: `uk-nav-divider`
  ========================================================================== */
@@ -2719,7 +2719,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 1 */
   height: 45px;
   padding: 0 15px;
-  line-height: 45px;
+  line-height: 30px;
   /* 2 */
   color: #ffffff;
   font-size: 14px;
