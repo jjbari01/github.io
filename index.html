@@ -32,14 +32,14 @@
     <div class="tm-stick-wrapper" data-uk-sticky>
 
       <!-- logo -->
-      <a class="tm-logo uk-hidden-small uk-text-center" href="index.html">
-        <img src="images/demo/default/logo/sunflower_bw.jpg" width="300" height="120" alt="demo">
+      <a class="tm-logo uk-hidden-small uk-text-center">
+        <img src="images/demo/default/logo/j2.jpg" width="150" height="60" alt="demo">
       </a>
 
       <!-- small logo -->
       <div class="uk-navbar-content uk-visible-small">
-        <a class="tm-logo-small" href="index.html">
-          <img src="images/demo/default/logo/sunflower_bw.jpg" width="200" height="60" alt="demo">
+        <a class="tm-logo-small">
+          <img src="images/demo/default/logo/j2.jpg" width="100" height="30" alt="demo">
         </a>
       </div>
 
@@ -48,13 +48,13 @@
         <ul class="uk-navbar-nav uk-hidden-small">
 
           <!-- Home menu -->
-          <li><a href="index.html">Home</a>
+          <li class="uk-active"><a href="index.html">Home</a>
 
           <!-- About Me menu -->
           <li><a href="about-me.html">About Me</a>
             
         <!-- Portfolio menu -->
-          <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
+          <li class="uk-parent" data-uk-dropdown><a href="index.html">Portfolio</a>
             <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
               <div class="uk-grid uk-dropdown-grid">
                 <div class="uk-width-1-1">
@@ -64,7 +64,7 @@
                     <li><a href="databaseDesign.html">Database Design</a></li>
                     <li><a href="systemAnalysis.html">Systems Analysis</a></li>
                     <li><a href="businessWriting.html">Business Writing</a></li>
-                    <li><a href="businessWriting.html">Project Management</a></li>
+                    <li><a href="projectMgmt.html">Project Management</a></li>
                     <li><a href="programming.html">Programming</a></li>
                     
                   </ul>
@@ -113,6 +113,42 @@
     </div>
   </div>
 
+<!-- offcanvas menu -->
+    <div id="offcanvas" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+
+           <!-- Home menu -->
+        <li class="uk-parent uk-active"><a href="index.html">Home</a>
+          <ul class="uk-nav-sub">
+          </ul>
+        </li>
+
+        <!-- About Me menu -->
+        <li class="uk-parent"><a href="about-me.html">About Me</a>
+          <ul class="uk-nav-sub">
+          </ul>
+        </li>
+
+        <!-- Portfolio menu -->
+        <li class="uk-parent"><a href="#">Portfolio</a>
+          <ul class="uk-nav-sub">
+                    <li><a href="businessAnalysis.html">Business Analysis</a></li>
+                    <li><a href="dataAnalysis.html">Data Analysis</a></li>
+                    <li><a href="databaseDesign.html">Database Design</a></li>
+                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
+                    <li><a href="businessWriting.html">Business Writing</a></li>
+                    <li><a href="projectMgmt.html">Project Management</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+
+          </ul>
+        </li>
+          <!-- Contact me menu -->
+          <li><a href="contact-me.html">Contact Me</a></li>
+
+        </div>
+      </div>
+
     <!-- main container -->
     <div class="uk-container tm-sheet uk-animation-fade">
 
@@ -122,13 +158,7 @@
           <a class="tm-totop-scroller uk-animation-slide-bottom" href="#" ></a>
         </div>
       </div>
-
-      <!-- header top position -->
-      <section class="tm-header-top uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}">
-        <div class="uk-width-1-1">
-          <div class="uk-panel uk-panel-box tm-block tm-padding-remove">
-
-             
+           
 
       <!-- main content -->
       <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
@@ -145,30 +175,59 @@
                     <div class="tm-dropcap-block">
                       <p>Welcome to my digital portfolio website. I'm glad your here. I will soon be a graduate from the University of Louisville with a degree in Computer Information Systems and a concentration in Web Development complemented by a minor in Spanish. I have a keen interest in data analytics, business and systems analyses. </p>
 
-                  <div class="tm-article">
-                    <div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin>
-                      
-                      <div class="uk-block">
-                      <h4 class="uk-module-title">Resume</h4>
-                      <p><a href = "documents/JenetBaribeau_Resume.pdf" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-sl-layers"></span></a>Please review and download my resume. You'll find my current training and diverse experience an asset on any team. </p>
-                      </div>
+            <!-- top-a position -->
+      <div id="tm-top-a" class="tm-block  tm-block-default">
+        <section class="tm-top-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+          <div class="uk-width-1-1">
+            <div class="uk-panel">
+              <div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin="">
 
-                      <div class="uk-block">
-                      <h4 class="uk-module-title">Cover Letter</h4>
-                      <p><a href = "documents/CoverLetter.pdf" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-sl-briefcase"></span></a>Click on the briefcase to review my cover letter for seeking a database.</p>
-                      </div>
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Business Analysis</h3>
+                  <p><a href = "businessAnalysis.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-cogs"></span></a>Case studies examined to creatively derive theoretical solutions for real world problems.</p>
+                </div>
 
-                      <div class="uk-block">
-                      <h4 class="uk-module-title">Personal Tidbits</h4>
-                      <p><span class="tm-block-icon uk-align-left uk-icon-sl-cup"></span>I love movies and have developed my personal home movie server to be accessible via the web.  My next project I would like to learn more about the financial sector and options trading. </p>
-                      </div>
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Database Analysis</h3>
+                  <p><a href = "dataAnalysis.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-bar-chart"></span></a>Data manipulation using SAS Code, WEKA, and MATLAB including examination and understanding of the results. </p>
+                </div>
 
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Database Design</h3>
+                  <p><a href = "databaseDesign.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-database"></span></a>SQL Queries, Relational database and Triggers represented in the database design.</p>
+                </div>
 
-                      </div>
-                    </div>
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">System Analysis</h3>
+                  <p><a href = "systemAnalysis.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-sitemap"></span></a>Analysis and design of a customer to provide specifications for a functional website and database.</p>
+                </div>
 
-                    <hr>
-                    <br>
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Business Writing</h3>
+                  <p><a href = "businessWriting.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-briefcase"></span></a>Critical and ethical case studies examining real life scenarios for all potential solutions.</p>
+                </div>
+
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Project Management</h3>
+                  <p><a href = "projectMgmt.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-group"></span></a>Final project implementation to a full website.</p>
+                </div>
+
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Programming</h3>
+                  <p><a href = "programming.html" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-code"></span></a>Diverse examples of C# and Java programming languages.</p>
+                </div>
+
+                <div class="uk-block">
+                  <h3 class="uk-panel-title">Resume</h3>
+                  <p><a href = "documents/JenetBaribeau_Resume.pdf" target = "_blank"><span class="tm-block-icon uk-align-left uk-icon-sl-layers"></span></a>Please review and download my resume. You'll find my current training and diverse experience an asset on any team.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
 
                     <div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin>
                       <div class="uk-width-medium-1-4">
@@ -184,56 +243,8 @@
 
     </div>
 
-    <!-- offcanvas menu -->
-    <div id="offcanvas" class="uk-offcanvas">
-      <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas">
+    
 
-        <!-- About Me menu -->
-        <li class="uk-parent uk-active"><a href="abou-me.html">About Me</a>
-          <ul class="uk-nav-sub">
-          </ul>
-        </li>
-
-        <!-- Portfolio menu -->
-        <li class="uk-parent"><a href="#">Portfolio</a>
-          <ul class="uk-nav-sub">
-                    <li><a href="businessAnalysis.html">Business Analysis</a></li>
-                    <li><a href="dataAnalysis.html">Data Analysis</a></li>
-                    <li><a href="databaseDesign.html">Database Design</a></li>
-                    <li><a href="systemAnalysis.html">Systems Analysis</a></li>
-                    <li><a href="businessWriting.html">Business Writing</a></li>
-                    <li><a href="programming.html">Programming</a></li>
-                    <li><a href="projectMgmt.html">Project Management</a></li>
-          </ul>
-        </li>
-          <!-- Contact me menu -->
-          <li><a href="contact-me.html">Contact Me</a></li>
-
-        </div>
-      </div>
-
-  <!-- js -->
-  <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
-
-  <!-- uikit -->
-  <script src="vendor/uikit/js/uikit.min.js" type="text/javascript"></script>
-  <script src="vendor/uikit/js/components/accordion.min.js" type="text/javascript"></script>
-  <script src="vendor/uikit/js/components/grid.min.js" type="text/javascript"></script>
-  <script src="vendor/uikit/js/components/lightbox.min.js" type="text/javascript"></script>
-  <script src="vendor/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
-  <script src="vendor/uikit/js/components/sticky.min.js" type="text/javascript"></script>
-  <script src="vendor/uikit/js/components/tooltip.min.js" type="text/javascript"></script>
-
-  <!-- theme -->
-  <script src="js/theme.js" type="text/javascript"></script>
-  </body>
- </html></a></p>
-        </div>
-      </footer>
-
-      
- 
 
   <!-- js -->
   <script src="js/jquery/jquery.min.js" type="text/javascript"></script>

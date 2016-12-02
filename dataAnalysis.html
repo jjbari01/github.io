@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="data analysis, portfolio, web developer, sql, sas" />
+  <meta name="keywords" content="business analysis, portfolio, web developer, sql, sas" />
   <meta name="description" content="Responsive Portfolio Template" />
   <meta name="author" content="Data Analysis">
   <title>Data Analysis</title>
@@ -27,23 +27,25 @@
     <div class="spinner"></div>
   </div>
 
+
   <!-- main bar -->
   <div class="tm-mainbar">
     <div class="tm-stick-wrapper" data-uk-sticky>
 
       <!-- logo -->
-      <a class="tm-logo uk-hidden-small uk-text-center" href="index.html">
-        <img src="images/demo/default/logo/bigData.jpg" width="300" height="120" alt="demo">
+      <a class="tm-logo uk-hidden-small uk-text-center">
+        <img src="images/demo/default/logo/j2.jpg" width="150" height="60" alt="demo">
       </a>
 
       <!-- small logo -->
       <div class="uk-navbar-content uk-visible-small">
-          <a class="tm-logo-small" href="index.html">
-             <img src="images/demo/default/logo/bigData.jpg" width="200" height="60" alt="demo">
-          </a>
+        <a class="tm-logo-small">
+          <img src="images/demo/default/logo/j2.jpg" width="100" height="30" alt="demo">
+        </a>
       </div>
 
-         <!-- vertical main menu -->
+
+      <!-- vertical main menu -->
       <nav class="tm-navbar uk-navbar">
         <ul class="uk-navbar-nav uk-hidden-small">
 
@@ -53,17 +55,18 @@
           <!-- About me menu -->
           <li><a href="about-me.html">About Me</a>
 
-                    <!-- Portfolio menu -->
-          <li class="uk-parent" data-uk-dropdown><a href="#">Portfolio</a>
+         <!-- Portfolio menu -->
+          <li class="uk-parent" data-uk-dropdown><a href="index.html">Portfolio</a>
             <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
               <div class="uk-grid uk-dropdown-grid">
                 <div class="uk-width-1-1">
                   <ul class="uk-nav uk-nav-navbar">
-                    <li><a href="businessAnalysis.html">Business Analysis</a></li>
-                    <li><a href="dataDesign.html">Data Design</a></li>
+                    <li ><a href="businessAnalysis.html">Business Analysis</a></li>
+                    <li class = "uk-active"><a href="dataAnalysis.html">Data Analysis</a></li>
+                    <li><a href="databaseDesign.html">Database Design</a></li>
                     <li><a href="systemAnalysis.html">Systems Analysis</a></li>
                     <li><a href="businessWriting.html">Business Writing</a></li>
-                    <li><a href="businessWriting.html">Project Management</a></li>
+                    <li><a href="projectMgmt.html">Project Management</a></li>
                     <li><a href="programming.html">Programming</a></li>
                     
                   </ul>
@@ -74,15 +77,20 @@
 
           <!-- Contact me menu -->
           <li><a href="contact-me.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+          <!-- header side section-->
+      <div class="tm-header-side">
+        <div class=" uk-hidden-small">
+
 
            <!-- social icons -->
           <a href="https://twitter.com/swibella" class="uk-icon-button uk-icon-sl-social-twitter" target="_blank"></a>
           <a href="https://facebook.com/jenet.baribeau" class="uk-icon-button uk-icon-sl-social-facebook" target="_blank"></a>
           <a href="https://www.linkedin.com/in/jenet-baribeau-17089811" class="uk-icon-button uk-icon-linkedin" target="_blank"></a>
         </div>
-        </ul>
-    </nav>
-
+    
         <div class=" uk-hidden-small">
           <p></p>
         </div>
@@ -96,23 +104,29 @@
       <!-- footer -->
       <footer class="tm-footer uk-width-1-1">
         <div class="">
-           <p class="uk-text-center">Copyright &copy; <a href="http://goo.gl/fpWYUL" target="_blank">Jenet Baribeau</a></p>
+           <p class="uk-text-center">Copyright &copy; <a href="#">Jenet Baribeau</a></p>
         </div>
       </footer>
 
-      <!-- offcanvas menu -->
+       <!-- offcanvas menu toggle -->
+      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small uk-flex uk-flex-middle" data-uk-offcanvas><span></span></a>
+    </div>
+  </div>
+
+
+    <!-- offcanvas menu -->
     <div id="offcanvas" class="uk-offcanvas">
       <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-offcanvas">
 
           <!-- Home menu -->
-        <li class="uk-parent uk-active"><a href="index.html">Home</a>
+        <li class="uk-parent"><a href="index.html">Home</a>
           <ul class="uk-nav-sub">
           </ul>
         </li>
 
         <!-- About Me menu -->
-        <li class="uk-parent uk-active"><a href="abou-me.html">About Me</a>
+        <li><a href="abou-me.html">About Me</a>
           <ul class="uk-nav-sub">
           </ul>
         </li>
@@ -120,7 +134,8 @@
         <!-- Portfolio menu -->
         <li class="uk-parent"><a href="#">Portfolio</a>
           <ul class="uk-nav-sub">
-                    <li><a href="businessAnalysis.html">Business Analysis</a></li>
+                    <li ><a href="businessAnalysis.html">Business Analysis</a></li>
+                    <li class = "uk-active"><a href="dataAnalysis.html">Data Analysis</a></li>
                     <li><a href="databaseDesign.html">Database Design</a></li>
                     <li><a href="systemAnalysis.html">Systems Analysis</a></li>
                     <li><a href="businessWriting.html">Business Writing</a></li>
@@ -136,6 +151,18 @@
 
   <!-- main container -->
   <div class="uk-container tm-sheet uk-animation-fade">
+
+    <!-- to top scroller -->
+    <div class="uk-sticky-placeholder">
+      <div data-uk-smooth-scroll data-uk-sticky="{top:-500}">
+        <a class="tm-totop-scroller uk-animation-slide-bottom" href="#" ></a>
+      </div>
+    </div>
+
+<!-- main container -->
+      <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
+        <div class="tm-main uk-width-medium-1-1">
+          <main class="tm-content">
 
     <!-- to top scroller -->
     <div class="uk-sticky-placeholder">
@@ -187,8 +214,14 @@
     </div>
   </div>
 
+  <!-- offcanvas menu -->
+  <div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+      <ul class="uk-nav uk-nav-offcanvas">
+      </div>
 
-    
+        
+
   <!-- js -->
   <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
 
@@ -205,3 +238,9 @@
   <script src="js/theme.js" type="text/javascript"></script>
 </body>
 </html>
+
+
+
+
+
+
